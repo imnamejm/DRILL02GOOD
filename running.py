@@ -13,7 +13,7 @@ def rander_all(x, y):
     character.draw_now(x,y)
     delay(0.1) 
 
-def run_circcle():
+def run_circle():
     print('CIRCLE')
     cx , cy, r = 400, 300, 200
     for deg in range(0, 360, 5):
@@ -23,14 +23,16 @@ def run_circcle():
 
 def run_rectangle():
     print('RECTANGLE')
-
+    
 #botton line
     for x in range(50, 750,10):
         rander_all(x, 90)
-
+#top line
     for x in range (750,50,-10):
+        rander_all(x, 550)
         
     
+
 
 while True:
     run_circle()
