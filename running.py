@@ -8,6 +8,10 @@ grass=load_image('grass.png')
 character = load_image('character.png')
 
 def run_circcle():
+    clear_canvas.now()
+    grass.draw_now(400,30)
+    character.draw_now(400,9)
+    delay(1)
     print('CIRCLE')
     pass
 
